@@ -1,0 +1,160 @@
+:root {
+    --bg: #0e0d0d;
+    --surface: #141716;
+    --surface2: #1b1e1c;
+    --border: rgba(255,255,255,0.07);
+    --text: #3abf57;
+    --text-muted: #6b7570;
+    --accent: #4ade80;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: monospace;
+    font-size: 13px;
+    min-height: 100vh;
+    padding: 24px 20px;
+}   
+
+header h1 {
+    font-size: 26px;
+    color: var (--text);
+    margin-bottom: 4px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 24 p;
+}
+
+section {
+    background: var(--surface);
+    border:  1.3px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+section h3 {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+#energy-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--accent);
+}
+
+#energy-score {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+#energy-label {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+#energy-desc {
+    font-size: 20px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Form Inputs */
+
+label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input[type="time"] {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: monospace;
+    font-size: 14px;
+    padding: 10px 12px;
+    width: 100%;
+    outline: none;
+
+}
+
+input[type="time"]:focus {
+    border-color: var(--accent);
+}
+
+/* Mood Buttons */
+#mood-selector {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+#mood-selector button {
+    flex: 1;
+    padding: 10px 4px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-family: monospace;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+}
+
+#mood-selector button:hover {
+    background-color: var(--text-muted);
+    color: var(--text);
+}
+
+#log-form {
+    border: 1px solid var(--accent);
+}
+
+/* Log Button */
+
+#log-form > button {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: #0d0f0e;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+#log-form > button:hover {
+    opacity: 0.85;
+}
+

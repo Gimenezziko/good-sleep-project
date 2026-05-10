@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Good Sleep Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+    <h1>The Good Sleep Project </h1>
+    <p> Weekly Tracker</p>
+</header>
+
+<!-- Energy banner -->
+<section id ="energy banner">
+    <div id="energy score"></div>
+    <div>
+        <h2 id="energy-label">No data yet</h2>
+        <p id="energy-desc">Log tonight's sleep to see your projected energy levels tomorrow. </p>
+    </div>
+</section>
+
+<!-- Log form -->
+<section id="log-form">
+    <h3> Log last night</h3>
+
+    <label for="sleep-time">Slept at</label>
+    <input type="time" id="wake-time" value="23:00">
+
+    <label for="wake-time">Woke up at</label>
+    <input type="time" id="wake-time" value="07:00">
+
+    <p> General Mood today</p>
+    <div id="mood-selector"> 
+        <button onclick="selectMood (4)">Whole</button>
+        <button onclick="selectMood (3)">Good</button>
+        <button onclick="selectMood (2)">Okay</button>
+        <button onclick="selectMood (1)">Bad</button>
+    </div>
+
+    <label for"nap-toggle">Took a nap today?</label>
+    <input type="checkbox" id="nap-toggle">
+
+    <button onclick"logEntry ()">Log Night</button>
+</section>
+
+<!-- Sleep Graph -->
+<section id="graph-secton"></section>
+    <h3>Hours of sleep - this week</h3>
+    <canvas id="sleep-chart"></canvas>
+</section> 
+
+<section id ="log-list section">
+    <h3>Recent nights</h3>
+    <div id="log-list">No nights logged yet. Start tonight</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+
+</html>
