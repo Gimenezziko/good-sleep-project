@@ -132,6 +132,15 @@ input[type="time"]:focus {
     color: var(--text);
 }
 
+
+#mood-selector button.active {
+    background-color: var(--accent);
+    color: var (--accent)
+    }
+
+
+
+
 #log-form {
     border: 1px solid var(--accent);
 }

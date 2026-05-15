@@ -30,23 +30,23 @@
     <h3> Log last night</h3>
 
     <label for="sleep-time">Slept at</label>
-    <input type="time" id="wake-time" value="23:00">
+    <input type="time" id="sleep-time" value="00:00">
 
     <label for="wake-time">Woke up at</label>
-    <input type="time" id="wake-time" value="07:00">
+    <input type="time" id="wake-time" value="00:00">
 
     <p> General Mood today</p>
     <div id="mood-selector"> 
-        <button onclick="selectMood (4)">Whole</button>
-        <button onclick="selectMood (3)">Good</button>
-        <button onclick="selectMood (2)">Okay</button>
-        <button onclick="selectMood (1)">Bad</button>
+        <button onclick="selectMood(4)">Whole</button>
+        <button onclick="selectMood(3)">Good</button>
+        <button onclick="selectMood(2)">Okay</button>
+        <button onclick="selectMood(1)">Bad</button>
     </div>
 
-    <label for"nap-toggle">Took a nap today?</label>
+    <label for="nap-toggle">Took a nap today?</label>
     <input type="checkbox" id="nap-toggle">
 
-    <button onclick"logEntry ()">Log Night</button>
+    <button onclick="logEntry()">Log Night</button>
 </section>
 
 <!-- Sleep Graph -->
